@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+
+outputs/
+judge_results/
+results/
+
+# LLM / API cache files (auto-generated on first run).
+# assay/augmentation/data/ner_error_cache.json is committed so that the
+# Error Injection quick start runs without an API key.
+assay/ner/data/ner_cache.json
+assay/augmentation/data/pubchem_cache.json
+assay/augmentation/data/llm_convert_cache.json
+assay/augmentation/data_bio/ner_error_cache.json

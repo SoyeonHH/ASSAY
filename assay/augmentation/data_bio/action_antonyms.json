@@ -1,0 +1,165 @@
+{
+  "_description": "Action antonym pairs for biology protocols. Includes shared lab verbs and biology-specific actions.",
+  "pairs": [
+    {
+      "a": {"base": "heat", "past": "heated", "gerund": "heating"},
+      "b": {"base": "cool", "past": "cooled", "gerund": "cooling"}
+    },
+    {
+      "a": {"base": "add", "past": "added", "gerund": "adding"},
+      "b": {"base": "remove", "past": "removed", "gerund": "removing"}
+    },
+    {
+      "a": {"base": "dissolve", "past": "dissolved", "gerund": "dissolving"},
+      "b": {"base": "precipitate", "past": "precipitated", "gerund": "precipitating"}
+    },
+    {
+      "a": {"base": "mix", "past": "mixed", "gerund": "mixing"},
+      "b": {"base": "separate", "past": "separated", "gerund": "separating"}
+    },
+    {
+      "a": {"base": "dry", "past": "dried", "gerund": "drying"},
+      "b": {"base": "wet", "past": "wetted", "gerund": "wetting"}
+    },
+    {
+      "a": {"base": "freeze", "past": "frozen", "gerund": "freezing"},
+      "b": {"base": "thaw", "past": "thawed", "gerund": "thawing"}
+    },
+    {
+      "a": {"base": "dilute", "past": "diluted", "gerund": "diluting"},
+      "b": {"base": "concentrate", "past": "concentrated", "gerund": "concentrating"}
+    },
+    {
+      "a": {"base": "filter", "past": "filtered", "gerund": "filtering"},
+      "b": {"base": "disperse", "past": "dispersed", "gerund": "dispersing"}
+    },
+    {
+      "a": {"base": "centrifuge", "past": "centrifuged", "gerund": "centrifuging"},
+      "b": {"base": "resuspend", "past": "resuspended", "gerund": "resuspending"}
+    },
+    {
+      "a": {"base": "wash", "past": "washed", "gerund": "washing"},
+      "b": {"base": "contaminate", "past": "contaminated", "gerund": "contaminating"}
+    },
+    {
+      "a": {"base": "stir", "past": "stirred", "gerund": "stirring"},
+      "b": {"base": "settle", "past": "settled", "gerund": "settling"}
+    },
+    {
+      "a": {"base": "incubate", "past": "incubated", "gerund": "incubating"},
+      "b": {"base": "quench", "past": "quenched", "gerund": "quenching"}
+    },
+    {
+      "a": {"base": "activate", "past": "activated", "gerund": "activating"},
+      "b": {"base": "deactivate", "past": "deactivated", "gerund": "deactivating"}
+    },
+    {
+      "a": {"base": "lyse", "past": "lysed", "gerund": "lysing"},
+      "b": {"base": "stabilize", "past": "stabilized", "gerund": "stabilizing"}
+    },
+    {
+      "a": {"base": "transfect", "past": "transfected", "gerund": "transfecting"},
+      "b": {"base": "harvest", "past": "harvested", "gerund": "harvesting"}
+    },
+    {
+      "a": {"base": "inoculate", "past": "inoculated", "gerund": "inoculating"},
+      "b": {"base": "sterilize", "past": "sterilized", "gerund": "sterilizing"}
+    },
+    {
+      "a": {"base": "amplify", "past": "amplified", "gerund": "amplifying"},
+      "b": {"base": "degrade", "past": "degraded", "gerund": "degrading"}
+    },
+    {
+      "a": {"base": "denature", "past": "denatured", "gerund": "denaturing"},
+      "b": {"base": "renature", "past": "renatured", "gerund": "renaturing"}
+    },
+    {
+      "a": {"base": "ligate", "past": "ligated", "gerund": "ligating"},
+      "b": {"base": "digest", "past": "digested", "gerund": "digesting"}
+    },
+    {
+      "a": {"base": "elute", "past": "eluted", "gerund": "eluting"},
+      "b": {"base": "bind", "past": "bound", "gerund": "binding"}
+    },
+    {
+      "a": {"base": "pellet", "past": "pelleted", "gerund": "pelleting"},
+      "b": {"base": "resuspend", "past": "resuspended", "gerund": "resuspending"}
+    },
+    {
+      "a": {"base": "stain", "past": "stained", "gerund": "staining"},
+      "b": {"base": "destain", "past": "destained", "gerund": "destaining"}
+    },
+    {
+      "a": {"base": "fix", "past": "fixed", "gerund": "fixing"},
+      "b": {"base": "permeabilize", "past": "permeabilized", "gerund": "permeabilizing"}
+    },
+    {
+      "a": {"base": "plate", "past": "plated", "gerund": "plating"},
+      "b": {"base": "harvest", "past": "harvested", "gerund": "harvesting"}
+    },
+    {
+      "a": {"base": "passage", "past": "passaged", "gerund": "passaging"},
+      "b": {"base": "freeze", "past": "frozen", "gerund": "freezing"}
+    },
+    {
+      "a": {"base": "seed", "past": "seeded", "gerund": "seeding"},
+      "b": {"base": "detach", "past": "detached", "gerund": "detaching"}
+    },
+    {
+      "a": {"base": "trypsinize", "past": "trypsinized", "gerund": "trypsinizing"},
+      "b": {"base": "neutralize", "past": "neutralized", "gerund": "neutralizing"}
+    },
+    {
+      "a": {"base": "anneal", "past": "annealed", "gerund": "annealing"},
+      "b": {"base": "denature", "past": "denatured", "gerund": "denaturing"}
+    },
+    {
+      "a": {"base": "hybridize", "past": "hybridized", "gerund": "hybridizing"},
+      "b": {"base": "strip", "past": "stripped", "gerund": "stripping"}
+    },
+    {
+      "a": {"base": "block", "past": "blocked", "gerund": "blocking"},
+      "b": {"base": "expose", "past": "exposed", "gerund": "exposing"}
+    },
+    {
+      "a": {"base": "load", "past": "loaded", "gerund": "loading"},
+      "b": {"base": "unload", "past": "unloaded", "gerund": "unloading"}
+    },
+    {
+      "a": {"base": "inject", "past": "injected", "gerund": "injecting"},
+      "b": {"base": "extract", "past": "extracted", "gerund": "extracting"}
+    },
+    {
+      "a": {"base": "polymerize", "past": "polymerized", "gerund": "polymerizing"},
+      "b": {"base": "depolymerize", "past": "depolymerized", "gerund": "depolymerizing"}
+    },
+    {
+      "a": {"base": "phosphorylate", "past": "phosphorylated", "gerund": "phosphorylating"},
+      "b": {"base": "dephosphorylate", "past": "dephosphorylated", "gerund": "dephosphorylating"}
+    },
+    {
+      "a": {"base": "oxidize", "past": "oxidized", "gerund": "oxidizing"},
+      "b": {"base": "reduce", "past": "reduced", "gerund": "reducing"}
+    },
+    {
+      "a": {"base": "crosslink", "past": "crosslinked", "gerund": "crosslinking"},
+      "b": {"base": "cleave", "past": "cleaved", "gerund": "cleaving"}
+    },
+    {
+      "a": {"base": "sonicate", "past": "sonicated", "gerund": "sonicating"},
+      "b": {"base": "settle", "past": "settled", "gerund": "settling"}
+    },
+    {
+      "a": {"base": "vortex", "past": "vortexed", "gerund": "vortexing"},
+      "b": {"base": "settle", "past": "settled", "gerund": "settling"}
+    },
+    {
+      "a": {"base": "aspirate", "past": "aspirated", "gerund": "aspirating"},
+      "b": {"base": "dispense", "past": "dispensed", "gerund": "dispensing"}
+    },
+    {
+      "a": {"base": "aliquot", "past": "aliquoted", "gerund": "aliquoting"},
+      "b": {"base": "pool", "past": "pooled", "gerund": "pooling"}
+    }
+  ]
+}

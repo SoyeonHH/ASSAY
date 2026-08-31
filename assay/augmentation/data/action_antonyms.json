@@ -1,0 +1,281 @@
+{
+  "_description": "Action antonym pairs for materials science procedures. Each entry contains base forms and their inflections.",
+  "pairs": [
+    {
+      "a": {"base": "heat", "past": "heated", "gerund": "heating"},
+      "b": {"base": "cool", "past": "cooled", "gerund": "cooling"}
+    },
+    {
+      "a": {"base": "add", "past": "added", "gerund": "adding"},
+      "b": {"base": "remove", "past": "removed", "gerund": "removing"}
+    },
+    {
+      "a": {"base": "dissolve", "past": "dissolved", "gerund": "dissolving"},
+      "b": {"base": "precipitate", "past": "precipitated", "gerund": "precipitating"}
+    },
+    {
+      "a": {"base": "mix", "past": "mixed", "gerund": "mixing"},
+      "b": {"base": "separate", "past": "separated", "gerund": "separating"}
+    },
+    {
+      "a": {"base": "oxidize", "past": "oxidized", "gerund": "oxidizing"},
+      "b": {"base": "reduce", "past": "reduced", "gerund": "reducing"}
+    },
+    {
+      "a": {"base": "dry", "past": "dried", "gerund": "drying"},
+      "b": {"base": "wet", "past": "wetted", "gerund": "wetting"}
+    },
+    {
+      "a": {"base": "compress", "past": "compressed", "gerund": "compressing"},
+      "b": {"base": "expand", "past": "expanded", "gerund": "expanding"}
+    },
+    {
+      "a": {"base": "assemble", "past": "assembled", "gerund": "assembling"},
+      "b": {"base": "disassemble", "past": "disassembled", "gerund": "disassembling"}
+    },
+    {
+      "a": {"base": "charge", "past": "charged", "gerund": "charging"},
+      "b": {"base": "discharge", "past": "discharged", "gerund": "discharging"}
+    },
+    {
+      "a": {"base": "increase", "past": "increased", "gerund": "increasing"},
+      "b": {"base": "decrease", "past": "decreased", "gerund": "decreasing"}
+    },
+    {
+      "a": {"base": "raise", "past": "raised", "gerund": "raising"},
+      "b": {"base": "lower", "past": "lowered", "gerund": "lowering"}
+    },
+    {
+      "a": {"base": "accelerate", "past": "accelerated", "gerund": "accelerating"},
+      "b": {"base": "decelerate", "past": "decelerated", "gerund": "decelerating"}
+    },
+    {
+      "a": {"base": "absorb", "past": "absorbed", "gerund": "absorbing"},
+      "b": {"base": "desorb", "past": "desorbed", "gerund": "desorbing"}
+    },
+    {
+      "a": {"base": "adsorb", "past": "adsorbed", "gerund": "adsorbing"},
+      "b": {"base": "desorb", "past": "desorbed", "gerund": "desorbing"}
+    },
+    {
+      "a": {"base": "coat", "past": "coated", "gerund": "coating"},
+      "b": {"base": "strip", "past": "stripped", "gerund": "stripping"}
+    },
+    {
+      "a": {"base": "deposit", "past": "deposited", "gerund": "depositing"},
+      "b": {"base": "etch", "past": "etched", "gerund": "etching"}
+    },
+    {
+      "a": {"base": "anneal", "past": "annealed", "gerund": "annealing"},
+      "b": {"base": "quench", "past": "quenched", "gerund": "quenching"}
+    },
+    {
+      "a": {"base": "sinter", "past": "sintered", "gerund": "sintering"},
+      "b": {"base": "crush", "past": "crushed", "gerund": "crushing"}
+    },
+    {
+      "a": {"base": "calcine", "past": "calcined", "gerund": "calcining"},
+      "b": {"base": "hydrate", "past": "hydrated", "gerund": "hydrating"}
+    },
+    {
+      "a": {"base": "polymerize", "past": "polymerized", "gerund": "polymerizing"},
+      "b": {"base": "depolymerize", "past": "depolymerized", "gerund": "depolymerizing"}
+    },
+    {
+      "a": {"base": "crystallize", "past": "crystallized", "gerund": "crystallizing"},
+      "b": {"base": "amorphize", "past": "amorphized", "gerund": "amorphizing"}
+    },
+    {
+      "a": {"base": "grind", "past": "ground", "gerund": "grinding"},
+      "b": {"base": "pelletize", "past": "pelletized", "gerund": "pelletizing"}
+    },
+    {
+      "a": {"base": "filter", "past": "filtered", "gerund": "filtering"},
+      "b": {"base": "disperse", "past": "dispersed", "gerund": "dispersing"}
+    },
+    {
+      "a": {"base": "centrifuge", "past": "centrifuged", "gerund": "centrifuging"},
+      "b": {"base": "resuspend", "past": "resuspended", "gerund": "resuspending"}
+    },
+    {
+      "a": {"base": "wash", "past": "washed", "gerund": "washing"},
+      "b": {"base": "contaminate", "past": "contaminated", "gerund": "contaminating"}
+    },
+    {
+      "a": {"base": "purify", "past": "purified", "gerund": "purifying"},
+      "b": {"base": "contaminate", "past": "contaminated", "gerund": "contaminating"}
+    },
+    {
+      "a": {"base": "activate", "past": "activated", "gerund": "activating"},
+      "b": {"base": "deactivate", "past": "deactivated", "gerund": "deactivating"}
+    },
+    {
+      "a": {"base": "seal", "past": "sealed", "gerund": "sealing"},
+      "b": {"base": "open", "past": "opened", "gerund": "opening"}
+    },
+    {
+      "a": {"base": "immerse", "past": "immersed", "gerund": "immersing"},
+      "b": {"base": "withdraw", "past": "withdrawn", "gerund": "withdrawing"}
+    },
+    {
+      "a": {"base": "stir", "past": "stirred", "gerund": "stirring"},
+      "b": {"base": "settle", "past": "settled", "gerund": "settling"}
+    },
+    {
+      "a": {"base": "sonicate", "past": "sonicated", "gerund": "sonicating"},
+      "b": {"base": "settle", "past": "settled", "gerund": "settling"}
+    },
+    {
+      "a": {"base": "load", "past": "loaded", "gerund": "loading"},
+      "b": {"base": "unload", "past": "unloaded", "gerund": "unloading"}
+    },
+    {
+      "a": {"base": "inject", "past": "injected", "gerund": "injecting"},
+      "b": {"base": "extract", "past": "extracted", "gerund": "extracting"}
+    },
+    {
+      "a": {"base": "pressurize", "past": "pressurized", "gerund": "pressurizing"},
+      "b": {"base": "depressurize", "past": "depressurized", "gerund": "depressurizing"}
+    },
+    {
+      "a": {"base": "evacuate", "past": "evacuated", "gerund": "evacuating"},
+      "b": {"base": "backfill", "past": "backfilled", "gerund": "backfilling"}
+    },
+    {
+      "a": {"base": "passivate", "past": "passivated", "gerund": "passivating"},
+      "b": {"base": "corrode", "past": "corroded", "gerund": "corroding"}
+    },
+    {
+      "a": {"base": "graft", "past": "grafted", "gerund": "grafting"},
+      "b": {"base": "cleave", "past": "cleaved", "gerund": "cleaving"}
+    },
+    {
+      "a": {"base": "condense", "past": "condensed", "gerund": "condensing"},
+      "b": {"base": "evaporate", "past": "evaporated", "gerund": "evaporating"}
+    },
+    {
+      "a": {"base": "freeze", "past": "frozen", "gerund": "freezing"},
+      "b": {"base": "thaw", "past": "thawed", "gerund": "thawing"}
+    },
+    {
+      "a": {"base": "melt", "past": "melted", "gerund": "melting"},
+      "b": {"base": "solidify", "past": "solidified", "gerund": "solidifying"}
+    },
+    {
+      "a": {"base": "protonate", "past": "protonated", "gerund": "protonating"},
+      "b": {"base": "deprotonate", "past": "deprotonated", "gerund": "deprotonating"}
+    },
+    {
+      "a": {"base": "hydrolyze", "past": "hydrolyzed", "gerund": "hydrolyzing"},
+      "b": {"base": "condense", "past": "condensed", "gerund": "condensing"}
+    },
+    {
+      "a": {"base": "dope", "past": "doped", "gerund": "doping"},
+      "b": {"base": "undope", "past": "undoped", "gerund": "undoping"}
+    },
+    {
+      "a": {"base": "intercalate", "past": "intercalated", "gerund": "intercalating"},
+      "b": {"base": "deintercalate", "past": "deintercalated", "gerund": "deintercalating"}
+    },
+    {
+      "a": {"base": "exfoliate", "past": "exfoliated", "gerund": "exfoliating"},
+      "b": {"base": "restack", "past": "restacked", "gerund": "restacking"}
+    },
+    {
+      "a": {"base": "functionalize", "past": "functionalized", "gerund": "functionalizing"},
+      "b": {"base": "defunctionalize", "past": "defunctionalized", "gerund": "defunctionalizing"}
+    },
+    {
+      "a": {"base": "crosslink", "past": "crosslinked", "gerund": "crosslinking"},
+      "b": {"base": "degrade", "past": "degraded", "gerund": "degrading"}
+    },
+    {
+      "a": {"base": "cure", "past": "cured", "gerund": "curing"},
+      "b": {"base": "soften", "past": "softened", "gerund": "softening"}
+    },
+    {
+      "a": {"base": "harden", "past": "hardened", "gerund": "hardening"},
+      "b": {"base": "soften", "past": "softened", "gerund": "softening"}
+    },
+    {
+      "a": {"base": "magnetize", "past": "magnetized", "gerund": "magnetizing"},
+      "b": {"base": "demagnetize", "past": "demagnetized", "gerund": "demagnetizing"}
+    },
+    {
+      "a": {"base": "illuminate", "past": "illuminated", "gerund": "illuminating"},
+      "b": {"base": "shade", "past": "shaded", "gerund": "shading"}
+    },
+    {
+      "a": {"base": "irradiate", "past": "irradiated", "gerund": "irradiating"},
+      "b": {"base": "shield", "past": "shielded", "gerund": "shielding"}
+    },
+    {
+      "a": {"base": "dilute", "past": "diluted", "gerund": "diluting"},
+      "b": {"base": "concentrate", "past": "concentrated", "gerund": "concentrating"}
+    },
+    {
+      "a": {"base": "saturate", "past": "saturated", "gerund": "saturating"},
+      "b": {"base": "dilute", "past": "diluted", "gerund": "diluting"}
+    },
+    {
+      "a": {"base": "spin", "past": "spun", "gerund": "spinning"},
+      "b": {"base": "halt", "past": "halted", "gerund": "halting"}
+    },
+    {
+      "a": {"base": "aggregate", "past": "aggregated", "gerund": "aggregating"},
+      "b": {"base": "disperse", "past": "dispersed", "gerund": "dispersing"}
+    },
+    {
+      "a": {"base": "nucleate", "past": "nucleated", "gerund": "nucleating"},
+      "b": {"base": "dissolve", "past": "dissolved", "gerund": "dissolving"}
+    },
+    {
+      "a": {"base": "grow", "past": "grown", "gerund": "growing"},
+      "b": {"base": "etch", "past": "etched", "gerund": "etching"}
+    },
+    {
+      "a": {"base": "swell", "past": "swollen", "gerund": "swelling"},
+      "b": {"base": "shrink", "past": "shrunk", "gerund": "shrinking"}
+    },
+    {
+      "a": {"base": "stretch", "past": "stretched", "gerund": "stretching"},
+      "b": {"base": "compress", "past": "compressed", "gerund": "compressing"}
+    },
+    {
+      "a": {"base": "bend", "past": "bent", "gerund": "bending"},
+      "b": {"base": "straighten", "past": "straightened", "gerund": "straightening"}
+    },
+    {
+      "a": {"base": "align", "past": "aligned", "gerund": "aligning"},
+      "b": {"base": "randomize", "past": "randomized", "gerund": "randomizing"}
+    },
+    {
+      "a": {"base": "polarize", "past": "polarized", "gerund": "polarizing"},
+      "b": {"base": "depolarize", "past": "depolarized", "gerund": "depolarizing"}
+    },
+    {
+      "a": {"base": "catalyze", "past": "catalyzed", "gerund": "catalyzing"},
+      "b": {"base": "inhibit", "past": "inhibited", "gerund": "inhibiting"}
+    },
+    {
+      "a": {"base": "stabilize", "past": "stabilized", "gerund": "stabilizing"},
+      "b": {"base": "destabilize", "past": "destabilized", "gerund": "destabilizing"}
+    },
+    {
+      "a": {"base": "hydrogenate", "past": "hydrogenated", "gerund": "hydrogenating"},
+      "b": {"base": "dehydrogenate", "past": "dehydrogenated", "gerund": "dehydrogenating"}
+    },
+    {
+      "a": {"base": "sulfonate", "past": "sulfonated", "gerund": "sulfonating"},
+      "b": {"base": "desulfonate", "past": "desulfonated", "gerund": "desulfonating"}
+    },
+    {
+      "a": {"base": "carbonize", "past": "carbonized", "gerund": "carbonizing"},
+      "b": {"base": "decarbonize", "past": "decarbonized", "gerund": "decarbonizing"}
+    },
+    {
+      "a": {"base": "nitrogenate", "past": "nitrogenated", "gerund": "nitrogenating"},
+      "b": {"base": "denitrogenate", "past": "denitrogenated", "gerund": "denitrogenating"}
+    }
+  ]
+}

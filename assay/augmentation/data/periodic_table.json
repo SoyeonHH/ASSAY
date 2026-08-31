@@ -1,0 +1,83 @@
+{
+  "_description": "Element groups for substitution. Each group maps element symbols to their group info. Substitution picks a different element from the same group.",
+  "groups": {
+    "1_alkali": {
+      "elements": ["Li", "Na", "K", "Rb", "Cs"],
+      "description": "Alkali metals"
+    },
+    "2_alkaline_earth": {
+      "elements": ["Be", "Mg", "Ca", "Sr", "Ba"],
+      "description": "Alkaline earth metals"
+    },
+    "3_scandium": {
+      "elements": ["Sc", "Y", "La"],
+      "description": "Group 3"
+    },
+    "4_titanium": {
+      "elements": ["Ti", "Zr", "Hf"],
+      "description": "Group 4"
+    },
+    "5_vanadium": {
+      "elements": ["V", "Nb", "Ta"],
+      "description": "Group 5"
+    },
+    "6_chromium": {
+      "elements": ["Cr", "Mo", "W"],
+      "description": "Group 6"
+    },
+    "7_manganese": {
+      "elements": ["Mn", "Tc", "Re"],
+      "description": "Group 7"
+    },
+    "8_iron": {
+      "elements": ["Fe", "Ru", "Os"],
+      "description": "Group 8"
+    },
+    "9_cobalt": {
+      "elements": ["Co", "Rh", "Ir"],
+      "description": "Group 9"
+    },
+    "10_nickel": {
+      "elements": ["Ni", "Pd", "Pt"],
+      "description": "Group 10"
+    },
+    "11_copper": {
+      "elements": ["Cu", "Ag", "Au"],
+      "description": "Group 11 (coinage metals)"
+    },
+    "12_zinc": {
+      "elements": ["Zn", "Cd", "Hg"],
+      "description": "Group 12"
+    },
+    "13_boron": {
+      "elements": ["B", "Al", "Ga", "In", "Tl"],
+      "description": "Group 13"
+    },
+    "14_carbon": {
+      "elements": ["C", "Si", "Ge", "Sn", "Pb"],
+      "description": "Group 14"
+    },
+    "15_nitrogen": {
+      "elements": ["N", "P", "As", "Sb", "Bi"],
+      "description": "Group 15 (pnictogens)"
+    },
+    "16_oxygen": {
+      "elements": ["O", "S", "Se", "Te"],
+      "description": "Group 16 (chalcogens)"
+    },
+    "17_halogen": {
+      "elements": ["F", "Cl", "Br", "I"],
+      "description": "Group 17 (halogens)"
+    },
+    "18_noble_gas": {
+      "elements": ["He", "Ne", "Ar", "Kr", "Xe"],
+      "description": "Group 18 (noble gases)"
+    },
+    "lanthanide": {
+      "elements": ["Ce", "Pr", "Nd", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu"],
+      "description": "Lanthanides"
+    }
+  },
+  "ambiguous_symbols": ["B", "C", "N", "O", "S", "P", "I", "W", "Y", "K", "V", "U"],
+  "_note": "Single-letter symbols that may match common English words. Require word-boundary + context checks."
+}

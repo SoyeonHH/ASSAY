@@ -1,0 +1,75 @@
+{
+  "_description": "Reagent substitution groups for biology protocols. Each group maps reagent names to functionally related but scientifically wrong alternatives.",
+  "groups": {
+    "buffers": {
+      "elements": ["Tris", "HEPES", "PBS", "MOPS", "MES", "PIPES", "TBS"],
+      "description": "Buffer systems"
+    },
+    "detergents": {
+      "elements": ["SDS", "Triton X-100", "Tween 20", "NP-40", "CHAPS"],
+      "description": "Detergents and surfactants"
+    },
+    "antibiotics_amino": {
+      "elements": ["ampicillin", "kanamycin", "chloramphenicol", "tetracycline", "gentamicin", "streptomycin"],
+      "description": "Antibiotics for selection"
+    },
+    "polymerases": {
+      "elements": ["Taq polymerase", "Pfu polymerase", "Phusion polymerase", "Klenow fragment", "T4 DNA polymerase"],
+      "description": "DNA polymerases"
+    },
+    "proteases": {
+      "elements": ["trypsin", "pepsin", "proteinase K", "collagenase", "chymotrypsin", "papain"],
+      "description": "Proteolytic enzymes"
+    },
+    "restriction_enzymes": {
+      "elements": ["EcoRI", "BamHI", "HindIII", "NotI", "XhoI", "NdeI"],
+      "description": "Restriction endonucleases"
+    },
+    "fixatives": {
+      "elements": ["formaldehyde", "glutaraldehyde", "paraformaldehyde", "methanol", "acetone"],
+      "description": "Fixatives for microscopy"
+    },
+    "fluorescent_dyes": {
+      "elements": ["DAPI", "Hoechst", "ethidium bromide", "SYBR Green", "propidium iodide", "calcein"],
+      "description": "Fluorescent stains and dyes"
+    },
+    "cell_media": {
+      "elements": ["DMEM", "RPMI-1640", "MEM", "F-12", "McCoy's 5A", "IMDM"],
+      "description": "Cell culture media"
+    },
+    "sera": {
+      "elements": ["FBS", "horse serum", "goat serum", "donkey serum", "BSA"],
+      "description": "Sera and protein supplements"
+    },
+    "organic_solvents": {
+      "elements": ["ethanol", "methanol", "isopropanol", "acetone", "DMSO", "chloroform"],
+      "description": "Organic solvents"
+    },
+    "salts": {
+      "elements": ["NaCl", "KCl", "CaCl2", "MgCl2", "MgSO4", "Na2HPO4"],
+      "description": "Inorganic salts"
+    },
+    "chelators": {
+      "elements": ["EDTA", "EGTA", "DTPA", "citric acid"],
+      "description": "Metal chelators"
+    },
+    "reducing_agents": {
+      "elements": ["DTT", "beta-mercaptoethanol", "TCEP", "glutathione"],
+      "description": "Reducing agents"
+    },
+    "nucleotides": {
+      "elements": ["dNTPs", "ATP", "GTP", "dATP", "dCTP", "dGTP", "dTTP"],
+      "description": "Nucleotides and triphosphates"
+    },
+    "sugars": {
+      "elements": ["glucose", "sucrose", "mannitol", "sorbitol", "trehalose"],
+      "description": "Sugars and polyols"
+    },
+    "transfection": {
+      "elements": ["Lipofectamine", "PEI", "calcium phosphate", "electroporation"],
+      "description": "Transfection reagents"
+    }
+  },
+  "ambiguous_symbols": ["BSA", "PBS", "FBS", "DTT", "DMSO"],
+  "_note": "Common abbreviations that may have alternative meanings depending on context."
+}

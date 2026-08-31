@@ -1,0 +1,448 @@
+{
+  "ead9667f74514409ae1b01bcecd1c915a0e28741e98e696abcb1da486d07ee88": [
+    {
+      "text": "Ti",
+      "type": "element"
+    },
+    {
+      "text": "2.0 g",
+      "type": "numerical_value"
+    },
+    {
+      "text": "30 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "3.4 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "0.5 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "2.0 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "2 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "40 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "150 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "24 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "8000 rpm",
+      "type": "numerical_value"
+    },
+    {
+      "text": "10 min",
+      "type": "numerical_value"
+    },
+    {
+      "text": "450 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "4 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "2 °C/min",
+      "type": "numerical_value"
+    },
+    {
+      "text": "100 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "magnetic stirrer",
+      "type": "equipment"
+    },
+    {
+      "text": "hot plate",
+      "type": "equipment"
+    },
+    {
+      "text": "autoclave",
+      "type": "equipment"
+    },
+    {
+      "text": "muffle furnace",
+      "type": "equipment"
+    },
+    {
+      "text": "centrifuge",
+      "type": "equipment"
+    },
+    {
+      "text": "Dissolve",
+      "type": "action_verb"
+    },
+    {
+      "text": "stirring",
+      "type": "action_verb"
+    },
+    {
+      "text": "Add",
+      "type": "action_verb"
+    },
+    {
+      "text": "Stir",
+      "type": "action_verb"
+    },
+    {
+      "text": "heat",
+      "type": "action_verb"
+    },
+    {
+      "text": "Cool",
+      "type": "action_verb"
+    },
+    {
+      "text": "collect",
+      "type": "action_verb"
+    },
+    {
+      "text": "Wash",
+      "type": "action_verb"
+    },
+    {
+      "text": "Calcine",
+      "type": "action_verb"
+    }
+  ],
+  "1034a2f34bfeaa419c7e513b3cf95a7a4b7354c28a3ee2cf2ea7d2ab89e2908c": [
+    {
+      "text": "Li",
+      "type": "element"
+    },
+    {
+      "text": "Fe",
+      "type": "element"
+    },
+    {
+      "text": "P",
+      "type": "element"
+    },
+    {
+      "text": "Ar",
+      "type": "element"
+    },
+    {
+      "text": "0.66 g",
+      "type": "numerical_value"
+    },
+    {
+      "text": "4.04 g",
+      "type": "numerical_value"
+    },
+    {
+      "text": "1.15 g",
+      "type": "numerical_value"
+    },
+    {
+      "text": "100 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "2.10 g",
+      "type": "numerical_value"
+    },
+    {
+      "text": "60 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "2 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "0.34 g",
+      "type": "numerical_value"
+    },
+    {
+      "text": "1 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "80 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "120 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "12 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "400 rpm",
+      "type": "numerical_value"
+    },
+    {
+      "text": "350 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "5 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "5 °C/min",
+      "type": "numerical_value"
+    },
+    {
+      "text": "700 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "10 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "0.1C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "2.5-4.2 V",
+      "type": "numerical_value"
+    },
+    {
+      "text": "magnetic stirrer",
+      "type": "equipment"
+    },
+    {
+      "text": "rotary evaporator",
+      "type": "equipment"
+    },
+    {
+      "text": "tube furnace",
+      "type": "equipment"
+    },
+    {
+      "text": "ball mill",
+      "type": "equipment"
+    },
+    {
+      "text": "glovebox",
+      "type": "equipment"
+    },
+    {
+      "text": "XRD",
+      "type": "equipment"
+    },
+    {
+      "text": "SEM",
+      "type": "equipment"
+    },
+    {
+      "text": "TEM",
+      "type": "equipment"
+    },
+    {
+      "text": "Dissolve",
+      "type": "action_verb"
+    },
+    {
+      "text": "Add",
+      "type": "action_verb"
+    },
+    {
+      "text": "Stir",
+      "type": "action_verb"
+    },
+    {
+      "text": "Evaporate",
+      "type": "action_verb"
+    },
+    {
+      "text": "Dry",
+      "type": "action_verb"
+    },
+    {
+      "text": "Grind",
+      "type": "action_verb"
+    },
+    {
+      "text": "Calcine",
+      "type": "action_verb"
+    },
+    {
+      "text": "anneal",
+      "type": "action_verb"
+    },
+    {
+      "text": "Cool",
+      "type": "action_verb"
+    }
+  ],
+  "af1c7cd00fb00f4062cb25e3a5182edf1d717a0db27ce8d3198f98764aee31da": [
+    {
+      "text": "Zn",
+      "type": "element"
+    },
+    {
+      "text": "N",
+      "type": "element"
+    },
+    {
+      "text": "C",
+      "type": "element"
+    },
+    {
+      "text": "H",
+      "type": "element"
+    },
+    {
+      "text": "O",
+      "type": "element"
+    },
+    {
+      "text": "F",
+      "type": "element"
+    },
+    {
+      "text": "3000 rpm",
+      "type": "numerical_value"
+    },
+    {
+      "text": "200 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "500 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "15 min",
+      "type": "numerical_value"
+    },
+    {
+      "text": "0.22 g",
+      "type": "numerical_value"
+    },
+    {
+      "text": "10 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "0.06 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "60 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "2 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "30 s",
+      "type": "numerical_value"
+    },
+    {
+      "text": "150 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "10 min",
+      "type": "numerical_value"
+    },
+    {
+      "text": "5 times",
+      "type": "numerical_value"
+    },
+    {
+      "text": "350 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "1 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "25 mM",
+      "type": "numerical_value"
+    },
+    {
+      "text": "200 mL",
+      "type": "numerical_value"
+    },
+    {
+      "text": "90 °C",
+      "type": "numerical_value"
+    },
+    {
+      "text": "4 h",
+      "type": "numerical_value"
+    },
+    {
+      "text": "Spin coater",
+      "type": "equipment"
+    },
+    {
+      "text": "Hot plate",
+      "type": "equipment"
+    },
+    {
+      "text": "Laboratory oven",
+      "type": "equipment"
+    },
+    {
+      "text": "Muffle furnace",
+      "type": "equipment"
+    },
+    {
+      "text": "Beaker",
+      "type": "equipment"
+    },
+    {
+      "text": "Clean",
+      "type": "action_verb"
+    },
+    {
+      "text": "dissolve",
+      "type": "action_verb"
+    },
+    {
+      "text": "Stir",
+      "type": "action_verb"
+    },
+    {
+      "text": "Spin-coat",
+      "type": "action_verb"
+    },
+    {
+      "text": "Dry",
+      "type": "action_verb"
+    },
+    {
+      "text": "Repeat",
+      "type": "action_verb"
+    },
+    {
+      "text": "Anneal",
+      "type": "action_verb"
+    },
+    {
+      "text": "Immerse",
+      "type": "action_verb"
+    },
+    {
+      "text": "Rinse",
+      "type": "action_verb"
+    }
+  ]
+}

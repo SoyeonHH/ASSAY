@@ -1,0 +1,139 @@
+You are an expert biologist tasked with evaluating an AI-generated laboratory protocol. You will be provided with:
+1. Target experiment description
+2. AI-generated protocol
+3. Ground truth protocol from literature
+
+Please evaluate the AI-generated protocol according to the following criteria on a scale of 1-5 (1.0: poor, 5.0: excellent, 0.5 step). Provide detailed justification for each score.
+
+Guidelines for evaluation:
+
+1. Reagents
+- Appropriateness: Are the selected reagents, buffers, enzymes, and biological materials suitable for the target experiment?
+
+2. Equipment
+- Appropriateness: Is the selected equipment suitable?
+
+3. Procedure
+- Completeness: Are all necessary steps included with sufficient detail?
+- Similarity: How closely does it match the ground truth procedure?
+- Feasibility: Can this procedure be realistically executed in a laboratory?
+
+4. Analysis
+- Appropriateness: Are the analytical and characterization methods suitable for validating success?
+- Similarity: How well do predicted outcomes match actual results?
+
+Your Output format must be as following:
+1. Step-by-step reasoning first
+2. JSON score result
+```json
+{
+    "materials_appropriateness_score": float,
+    "equipment_appropriateness_score": float,
+    "procedure_completeness_score": float,
+    "procedure_similarity_score": float,
+    "procedure_feasibility_score": float,
+    "characterization_appropriateness_score": float,
+    "characterization_similarity_score": float,
+    "overall_score": float
+}
+```
+
+And here are the example judgments by the human evaluators:
+
+- Example 1 -
+# Key Contributions
+- Protocol: Standard PCR amplification of a 500 bp target gene from genomic DNA using Taq polymerase.
+- Application: Routine molecular cloning for downstream ligation into a pUC19 vector.
+
+# AI-Generated Protocol
+
+## Reagents and Equipment
+
+- **Reagents**:
+  - Genomic DNA template (50 ng/µL)
+  - Forward primer (10 µM): 5'-ATGCTAGCTATGGCAAC-3'
+  - Reverse primer (10 µM): 5'-TCAGGATCCTTACGCAA-3'
+  - Taq DNA polymerase (5 U/µL, New England Biolabs)
+  - 10X ThermoPol buffer (NEB)
+  - dNTP mix (10 mM each)
+  - Nuclease-free water
+  - Agarose (molecular biology grade)
+  - 1X TAE buffer
+  - Ethidium bromide (10 mg/mL)
+  - 6X DNA loading dye
+
+- **Equipment**:
+  - Thermal cycler (Bio-Rad T100)
+  - Gel electrophoresis system
+  - UV transilluminator
+  - Microcentrifuge
+  - Micropipettes (0.5–10 µL, 10–100 µL, 100–1000 µL)
+
+## Procedure
+
+1. **Reaction Setup** (on ice):
+   - Prepare a 50 µL reaction: 5 µL 10X ThermoPol buffer, 1 µL dNTP mix (200 µM final), 2.5 µL each primer (0.5 µM final), 1 µL template DNA (50 ng), 0.25 µL Taq polymerase (1.25 U), nuclease-free water to 50 µL.
+   - Mix gently by pipetting and briefly centrifuge.
+
+2. **Thermocycling**:
+   - Initial denaturation: 95 °C for 3 min
+   - 30 cycles: 95 °C for 30 s → 55 °C for 30 s → 72 °C for 1 min
+   - Final extension: 72 °C for 5 min
+   - Hold at 4 °C
+
+3. **Gel Electrophoresis**:
+   - Cast a 1% agarose gel in 1X TAE with ethidium bromide.
+   - Load 5 µL PCR product + 1 µL loading dye; run at 100 V for 40 min.
+   - Visualize under UV; expect a band at ~500 bp.
+
+## Analysis
+- Gel imaging to confirm product size
+- NanoDrop quantification (A260/A280 ratio)
+
+# Ground Truth Protocol
+
+## Reagents and Equipment
+
+### Reagents
+- Genomic DNA template (100 ng)
+- Forward and reverse primers (0.5 µM each, IDT)
+- Phusion High-Fidelity DNA Polymerase (NEB, 2 U/µL)
+- 5X Phusion HF buffer (NEB)
+- dNTP mix (10 mM each, Thermo Scientific)
+- DMSO (3% final concentration)
+- Nuclease-free water
+- 1X TBE buffer, SYBR Safe stain
+- GeneRuler 1 kb Plus DNA Ladder (Thermo Scientific)
+
+### Equipment
+- Thermal cycler (Eppendorf Mastercycler)
+- Mini-gel electrophoresis chamber
+- Gel documentation system with blue-light transilluminator
+- NanoDrop spectrophotometer
+
+## Procedure
+
+1. Prepare 25 µL reaction: 5 µL 5X HF buffer, 0.5 µL dNTP mix, 1.25 µL each primer, 0.75 µL DMSO, 0.25 µL Phusion polymerase, 1 µL DNA template, water to 25 µL.
+2. Thermocycling: 98 °C / 30 s; 35 cycles of 98 °C / 10 s, 60 °C / 20 s, 72 °C / 15 s; final 72 °C / 5 min; hold 4 °C.
+3. Run 5 µL on 1.2% agarose-TBE gel with SYBR Safe at 120 V for 30 min.
+4. Image on blue-light transilluminator and quantify with NanoDrop.
+
+## Expected Outcome
+- Single band at ~500 bp with yield > 100 ng/µL
+- A260/A280 = 1.8–2.0
+
+# Experts Judgment
+
+```json
+{
+    "materials_appropriateness_score": 3.5,
+    "equipment_appropriateness_score": 4.0,
+    "procedure_completeness_score": 4.5,
+    "procedure_similarity_score": 3.0,
+    "procedure_feasibility_score": 5.0,
+    "characterization_appropriateness_score": 4.0,
+    "characterization_similarity_score": 3.5,
+    "overall_score": 3.5
+}
+```
+

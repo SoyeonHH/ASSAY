@@ -1,0 +1,19 @@
+# Core
+litellm>=1.50.0
+fire>=0.5.0
+jsonlines>=4.0.0
+tqdm>=4.60.0
+requests>=2.28.0
+
+# Analysis
+scipy>=1.10.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Contrastive pair construction
+scikit-learn>=1.3.0
+pyarrow>=14.0.0
+
+# Optional: Local inference (uncomment if using vLLM)
+# vllm>=0.15.0
+# transformers>=4.40.0
