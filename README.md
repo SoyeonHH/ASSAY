@@ -56,7 +56,7 @@ Judge models are served through [OpenRouter](https://openrouter.ai). The augment
 
 ## Quick Start
 
-The commands below run on `examples/sample_input.jsonl` (3 records) and are the ones used for the paper, differing only in the input file. The entity-recognition cache for these recipes is committed, so Error Injection and steps 2 and 4 run without an API key.
+The commands below run on `examples/sample_input.jsonl` (3 records), which also documents the expected input fields. They are the commands used for the paper, differing only in the input file. The entity-recognition cache for these recipes is committed, so Error Injection and steps 2 and 4 run without an API key.
 
 ### 1. Augment recipes
 
@@ -119,40 +119,19 @@ This reports Validity, Stability, and Accuracy for every model found in `judge_r
 
 ## Knowledge Augmentation Baselines
 
-Three inference-time baselines supply domain knowledge to an unmodified judge. Each prepends a context block to the judge prompt; no training is involved.
-
-| Mode | Context added |
-|------|---------------|
-| `chem_dict` | A chemical reference dictionary built from the candidate recipe, resolved into compounds (formula / IUPAC / common name), elements (periodic-group membership), equipment (incompatible alternatives), and actions (antonym verbs) |
-| `rag` | The five most similar training recipes retrieved by cosine similarity over `text-embedding-3-large` embeddings of the target material description |
-| `chem_dict,rag` | The dictionary followed by the retrieved recipes |
+Three inference-time baselines prepend domain knowledge to the judge prompt: `chem_dict` (a chemical reference dictionary built from the candidate recipe), `rag` (the five most similar training recipes, retrieved over `text-embedding-3-large` embeddings), and their combination.
 
 ```bash
-python -m assay.judge.evaluate <augmented.jsonl> \
-    --model openai/gpt-4o --reference_free true \
-    --augment chem_dict
-
 python -m assay.judge.evaluate <augmented.jsonl> \
     --model openai/gpt-4o --reference_free true \
     --augment chem_dict,rag --rag_corpus <train.parquet> --rag_top_k 5
 ```
 
-The RAG corpus parquet needs `contribution`, `recipe`, and `contributions_embedding` columns; no ground-truth recipe for the evaluated target is ever supplied. The mode is appended to the output filename (`gpt-4o_chem_dict.jsonl`), so variants can be scored side by side with `assay.metrics.run`.
-
-The `chem_dict` compound section reads `pubchem_cache.json` and `llm_convert_cache.json` from the active data directory. Those caches are written by the Equivalence Rewriting operators, so run step 1 on a dataset before using ChemDict on it; unresolved entities are skipped rather than looked up live.
+The RAG corpus parquet needs `contribution`, `recipe`, and `contributions_embedding` columns. `chem_dict` reads the PubChem caches written by Equivalence Rewriting, so run step 1 on the dataset first. The mode is appended to the output filename (`gpt-4o_chem_dict.jsonl`), so variants can be scored side by side.
 
 ## Biology Configuration
 
-The augmentation logic, the rate schedule, and the metric definitions are domain-independent. Transferring ASSAY to a new field needs only a swap dictionary directory and a judge prompt. `assay/augmentation/data_bio/` holds the configuration used for the biological protocol experiment.
-
-| File | Content |
-|------|---------|
-| `periodic_table.json` | 91 reagents across 17 groups (buffers, detergents, antibiotics, polymerases, proteases, restriction enzymes, media, …) replacing the periodic-group table |
-| `equipment_rules.json` | 64 substitutions over biology laboratory instruments |
-| `action_antonyms.json` | 40 protocol verb pairs (ligate ↔ digest, denature ↔ anneal, …) |
-| `error_ner_prompt.txt` | Entity-recognition prompt remapping the four entity types to the biological setting |
-
-Pass the directory with `--data_dir`; the swap dictionaries, the recognition prompt, and its cache are all read from it.
+`assay/augmentation/data_bio/` holds the swap dictionaries and the entity-recognition prompt for biological protocols, and `assay/judge/prompt_bio.txt` the corresponding rubric. Transferring ASSAY to another field requires only these two; the augmentation logic, the rate schedule, and the metrics are unchanged.
 
 ```bash
 python -m assay.augmentation.run \
@@ -166,11 +145,11 @@ python -m assay.judge.evaluate <augmented.jsonl> \
     --prompt_file assay/judge/prompt_bio.txt
 ```
 
-`prompt_bio.txt` rephrases the rubric for protocol evaluation. Unlike the materials science prompt it is reference-based and scores eight criteria, which is the configuration the reported biology results were produced with. Equivalence Rewriting is unchanged across domains, since PubChem resolution applies to reagents as well.
+`prompt_bio.txt` is reference-based and scores eight criteria, matching the reported biology setting.
 
 ## Contrastive Pair Construction
 
-Preference pairs are built from disagreement between judges on the same augmented recipe. For Error Injection the lower score is preferred; for Equivalence Rewriting the higher score is preferred. Both directions are filtered against a per-sample anchor score.
+Preference pairs are built from disagreement between judges on the same augmented recipe. The lower score is preferred for Error Injection, the higher for Equivalence Rewriting, and both are filtered against a per-sample anchor score.
 
 ```bash
 python -m assay.training.build_dpo_pairs \
@@ -180,7 +159,7 @@ python -m assay.training.build_dpo_pairs \
     --output_dir dpo_dataset
 ```
 
-This reads the same `judge_results/<prefix>_<condition>/<model>.jsonl` layout the judge writes and emits `train.parquet` and `validation.parquet` in the chat-formatted `prompt` / `chosen` / `rejected` schema. The paper uses a four-judge panel over 17 augmentation settings, keeps pairs with a score margin of at least 0.5, and retains at most five pairs per recipe per setting.
+This emits `train.parquet` and `validation.parquet` in the chat-formatted `prompt` / `chosen` / `rejected` schema.
 
 ## Project Structure
 
@@ -218,27 +197,3 @@ ASSAY/
 ├── examples/sample_input.jsonl
 └── requirements.txt
 ```
-
-## Data
-
-Input JSONL records:
-
-```json
-{
-    "id": 1,
-    "sample_id": 1,
-    "contribution": "Target material description...",
-    "recipe": "Ground truth synthesis recipe...",
-    "Material_Name": "TiO2",
-    "process": "hydrothermal",
-    "domain": "photocatalysis"
-}
-```
-
-Each stage appends fields. Augmentation adds `prediction` and `perturbation_meta`; the judge adds `judge_result` and `judge_model`.
-
-| Dataset | Role | Size |
-|---------|------|------|
-| AlchemyBench (high-impact test) | Judge evaluation | 169 recipes |
-| AlchemyBench (train) | RAG corpus, contrastive pairs | 16,026 recipes |
-| BioProBench | Biology transfer | 200 protocols |
